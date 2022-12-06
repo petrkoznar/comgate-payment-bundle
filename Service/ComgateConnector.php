@@ -44,7 +44,7 @@ class ComgateConnector
     {
         $baseParams = [
             'merchant' => $this->params["merchant"],
-            'test' => $this->params["test"] ? 'true' : 'false',
+            'test' => $this->params["test"] == 'true' ? 'true' : 'false',
             'secret' => $this->params["secret"]
         ];
 
